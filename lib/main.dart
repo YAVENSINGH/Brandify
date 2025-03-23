@@ -1,3 +1,5 @@
+import 'package:brandify/views/screens/required_fields/content_creation_screen.dart';
+import 'package:brandify/views/screens/required_fields/details_screen.dart';
 import 'package:brandify/views/screens/reset_password_screen.dart';
 import 'package:brandify/views/screens/verify_otp_screen.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +26,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -35,10 +39,12 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginScreen(),
         '/signup': (context) => SignupScreen(),
         '/forgotPassword': (context) => ForgotPasswordScreen(),
-        '/verifyOtp' : (context) => VerifyOtpScreenUI(),
+        '/verifyOtp': (context) => VerifyOtpScreenUI(),
         '/resetPassword': (context) => ResetPasswordScreen(),
-        // Add verifyOtp and resetPassword routes if needed
+        '/BrandDetails': (context) => BrandDetailsScreen(),
+        '/nextDetails': (context) => ContentCreationScreen(),  // Fixed route
       },
+
     );
   }
 }

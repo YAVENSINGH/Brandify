@@ -71,7 +71,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/home'); // Update as per your route
+                    Navigator.pushNamed(context, '/BrandDetails'); // Update as per your route
                   },
                   child: const Text("Log In", style: TextStyle(color: Colors.white)),
                 ),
